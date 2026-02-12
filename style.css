@@ -25,14 +25,15 @@ main{
 
 #reviewers_icon_star{
     display:block;
-    background: linear-gradient(180deg, #FFFFFF 40%, #F5C044, #000000);
-    /* background: radial-gradient(
+    /* background: linear-gradient(180deg, #FFFFFF 40%, #F5C044, #000000); */
+    background: radial-gradient(
       circle at top,
       #FFFFFF 0%,
-      #FFFFFF 44%,
+      #FFFFFF 42%,
       #F5C044 65%,
       #000000 100%
-    );  radial-gradient com efeito parecido*/
+    );  
+    /* radial-gradient com efeito parecido */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     font-size: 30px;
@@ -46,6 +47,7 @@ main{
 #reviewers p{
     margin-top:16px;
     font-size: 20px;
+    font-weight: 300;
 }
 
 /* @media (min-width:640px){
