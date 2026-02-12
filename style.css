@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p{
+    font-family: "Sora", sans-serif;
+    color: #18181B;
+}
+
+main{
+    padding: 30px 10px;
+}
+
+#reviewers_icon_back_star{
+    background-color: #F5C044;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviewers_icon_star{
+    display:block;
+    background: linear-gradient(180deg, #FFFFFF 40%, #F5C044, #000000);
+    /* background: radial-gradient(
+      circle at top,
+      #FFFFFF 0%,
+      #FFFFFF 44%,
+      #F5C044 65%,
+      #000000 100%
+    );  radial-gradient com efeito parecido*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 30px;
+    line-height: 1;
+}
+
+#reviewers h1{
+    margin-top:16px;
+    font-size: 36px;
+}
+#reviewers p{
+    margin-top:16px;
+    font-size: 20px;
+}
+
+/* @media (min-width:640px){
+    #Reviewers{
+        background-color: blue;
+    }
+}
+@media (min-width:1024px){
+    #Reviewers{
+        background-color: blue;
+    }
+}
+@media (min-width:1280px){
+    #Reviewers{
+        background-color: blue;
+    }
+}  */
