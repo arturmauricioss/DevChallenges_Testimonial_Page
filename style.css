@@ -12,7 +12,7 @@
     --cor-clara:#FAFAF9;
     --cor-branca:#FFFFFF;
 }
-h1, p, li{
+h1, h4, p, li{
     font-family: "Sora", sans-serif;  
 }
 
@@ -67,21 +67,50 @@ ul{
 li{
     display:flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
     font-size: 14px;
     color: var(--cor-media-escura);
     margin: 16px 0px;
+    letter-spacing: -0.2px;
 }
+
 li::before{
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     background: url(assets/Done_ring_round_fill.svg) no-repeat center/contain;
     flex-shrink: 0;
 }
+
 .card{
     margin-top: 40px;
-    padding:20px;
-    box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+    padding:30px 30px 30px 40px;
+    box-shadow: 8px 8px 20px 0px var(--cor-clara);
     border-radius: 8px;
+    width: 640px;
+}
+
+.company{
+    display: flex;
+    gap:14px;
+}
+
+.logo{
+    width: 90px;
+}
+
+.stars{
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.username{
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+.user_feedback{
+    margin-top: 4px;
+    line-height: 1.8;
 }
