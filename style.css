@@ -18,6 +18,7 @@ h1, p, li{
 
 main{
     padding: 30px 10px;
+    background-color: var(--cor-branca);
 }
 
 #reviewers_icon_back_star{
@@ -64,7 +65,6 @@ ul{
     list-style:none;
 }
 li{
-    /* border: 1px solid green; */
     display:flex;
     align-items: center;
     gap: 8px;
@@ -74,9 +74,14 @@ li{
 }
 li::before{
     content: "";
-    /* border: 1px solid blue; */
     width: 22px;
     height: 22px;
     background: url(assets/Done_ring_round_fill.svg) no-repeat center/contain;
     flex-shrink: 0;
+}
+.card{
+    margin-top: 40px;
+    padding:20px;
+    box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+    border-radius: 8px;
 }
