@@ -12,7 +12,7 @@
     --cor-clara:#FAFAF9;
     --cor-branca:#FFFFFF;
 }
-h1, p{
+h1, p, li{
     font-family: "Sora", sans-serif;  
 }
 
@@ -55,5 +55,28 @@ main{
     margin-top:16px;
     font-size: 20px;
     font-weight: 300;
-    color: rgb(var(--cor-media-escura)/ 0.1);
+    color: var(--cor-media-escura);
+    line-height: 1.8;
+}
+
+ul{
+    margin-top: 24px;
+    list-style:none;
+}
+li{
+    /* border: 1px solid green; */
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--cor-media-escura);
+    margin: 16px 0px;
+}
+li::before{
+    content: "";
+    /* border: 1px solid blue; */
+    width: 22px;
+    height: 22px;
+    background: url(assets/Done_ring_round_fill.svg) no-repeat center/contain;
+    flex-shrink: 0;
 }
