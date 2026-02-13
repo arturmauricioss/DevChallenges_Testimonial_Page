@@ -19,6 +19,8 @@ h1, h4, p, li{
 main{
     padding: 30px 10px;
     background-color: var(--cor-branca);
+    display: flex;
+    flex-direction: column;
 }
 
 #reviewers_icon_back_star{
@@ -82,11 +84,13 @@ li::before{
     flex-shrink: 0;
 }
 
+
 .card{
     margin-top: 40px;
-    padding:30px 30px 30px 40px;
-    box-shadow: 8px 8px 20px 0px var(--cor-clara);
+    padding:30px 40px;
+    box-shadow: 8px 8px 20px 0px var(--cor-media-clara);
     border-radius: 8px;
+    width: 100%;
     max-width: 640px;
 }
 
@@ -113,4 +117,23 @@ li::before{
 .user_feedback{
     margin-top: 4px;
     line-height: 1.8;
+    color: var(--cor-media-escura);
+
+}
+@media (min-width:641px) {
+    .card{
+        max-width: 360px;
+    }
+    #reviewers{
+        padding:30px;
+    }
+    #deck{
+        /* adicionar mais responsividade */
+    }
+    #google{
+        right: 0;
+    }
+    #meta{
+        left: 0;
+    }
 }
