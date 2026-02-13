@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --cor-primaria:#F5C044;
+    --cor-secudaria:#4CA154;
+    --cor-escura:#18181B;
+    --cor-media-escura:#52525A;
+    --cor-media-clara:#D4D4D8;
+    --cor-clara:#FAFAF9;
+    --cor-branca:#FFFFFF;
+}
 h1, p{
-    font-family: "Sora", sans-serif;
-    color: #18181B;
+    font-family: "Sora", sans-serif;  
 }
 
 main{
@@ -14,7 +21,7 @@ main{
 }
 
 #reviewers_icon_back_star{
-    background-color: #F5C044;
+    background-color: var(--cor-primaria);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -28,10 +35,10 @@ main{
     /* background: linear-gradient(180deg, #FFFFFF 40%, #F5C044, #000000); */
     background: radial-gradient(
       circle at top,
-      #FFFFFF 0%,
-      #FFFFFF 42%,
-      #F5C044 65%,
-      #000000 100%
+      var(--cor-branca),
+      var(--cor-clara) 44%,
+      var(--cor-primaria) 65%,
+      var(--cor-escura) 100%
     );  
     /* radial-gradient com efeito parecido */
     -webkit-background-clip: text;
@@ -48,20 +55,5 @@ main{
     margin-top:16px;
     font-size: 20px;
     font-weight: 300;
+    color: rgb(var(--cor-media-escura)/ 0.1);
 }
-
-/* @media (min-width:640px){
-    #Reviewers{
-        background-color: blue;
-    }
-}
-@media (min-width:1024px){
-    #Reviewers{
-        background-color: blue;
-    }
-}
-@media (min-width:1280px){
-    #Reviewers{
-        background-color: blue;
-    }
-}  */
