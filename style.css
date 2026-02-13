@@ -87,7 +87,7 @@ li::before{
     padding:30px 30px 30px 40px;
     box-shadow: 8px 8px 20px 0px var(--cor-clara);
     border-radius: 8px;
-    width: 640px;
+    max-width: 640px;
 }
 
 .company{
