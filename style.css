@@ -137,3 +137,18 @@ li::before{
         left: 0;
     }
 }
+@media (max-width:300px){
+    .card{
+        padding: 15px 5px;
+    }
+    .company{
+        display: block;
+    }
+    #reviewers h1{
+        font-size: clamp(15px,14vw,40px);
+        display: flex;
+    }
+    main{
+        min-width: 150px;
+    }
+}
