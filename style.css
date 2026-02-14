@@ -18,7 +18,7 @@ h1, h4, p, li{
 
 main{
     padding: 30px 10px;
-    background-color: var(--cor-branca);
+    background-color: var(--cor-clara);
     display: flex;
     flex-direction: column;
 }
@@ -88,10 +88,11 @@ li::before{
 .card{
     margin-top: 40px;
     padding:30px 40px;
-    box-shadow: 8px 8px 20px 0px var(--cor-media-clara);
+    box-shadow: 4px 4px 10px 0px var(--cor-media-clara);
     border-radius: 8px;
     width: 100%;
     max-width: 640px;
+    background-color: var(--cor-branca);
 }
 
 .company{
@@ -120,23 +121,9 @@ li::before{
     color: var(--cor-media-escura);
 
 }
-@media (min-width:641px) {
-    .card{
-        max-width: 360px;
-    }
-    #reviewers{
-        padding:30px;
-    }
-    #deck{
-        /* adicionar mais responsividade */
-    }
-    #google{
-        right: 0;
-    }
-    #meta{
-        left: 0;
-    }
-}
+
+
+
 @media (max-width:300px){
     .card{
         padding: 15px 5px;
@@ -145,10 +132,59 @@ li::before{
         display: block;
     }
     #reviewers h1{
-        font-size: clamp(15px,14vw,40px);
+        font-size: clamp(18px,14vw,40px);
         display: flex;
     }
     main{
         min-width: 150px;
     }
+}
+
+
+@media (min-width:640px) {
+
+    #reviewers{
+        padding:30px;
+    }
+    #deck{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 360px;
+    }
+    #google{
+        margin-left: auto;
+        margin-right: 23%;
+    }
+    #meta{
+        margin-right: auto;
+        margin-left: 23%;
+    }
+}
+
+@media (min-width:1280px){
+
+    main{
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    #reviewers{
+        width: 50vw;
+    }
+    #deck{
+        width: 50vw;
+        padding: 30px;
+    }
+    #google{
+        margin-left: auto;
+        margin-right:1%;
+    }
+    #meta{
+        margin-right: auto;
+        margin-left: 1%;
+    }
+
 }
