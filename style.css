@@ -25,7 +25,8 @@ main{
     display: flex;
     flex-direction: column;
     max-width: 1350px;
-     margin: auto;
+    margin: auto;
+    margin-top: 16px;
 }
 
 #reviewers_icon_back_star{
@@ -131,7 +132,7 @@ li::before{
 
 @media (max-width:300px){
     .card{
-        padding: 15px 5px;
+        padding: 15px 5px 5px;
     }
     .company{
         display: block;
@@ -165,16 +166,19 @@ li::before{
     #meta{
         margin-right: auto;
         margin-left: 23%;
+        margin-bottom: 50px;
     }
 }
 
-@media (min-width:1280px){
+@media (min-width:1024px){
 
     main{
         flex-direction: row;
         height: 100vh;
         align-items: center;
         justify-content: center;
+        padding:30px 40px;
+        /* gap: 8px; */
     }
     #reviewers{
         width: 50vw;
@@ -184,6 +188,7 @@ li::before{
         padding: 30px;
     }
     #google{
+        margin-top: 0;
         margin-left: auto;
         margin-right:1%;
     }
