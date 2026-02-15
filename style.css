@@ -15,12 +15,17 @@
 h1, h4, p, li{
     font-family: "Sora", sans-serif;  
 }
+body{
+    background-color: var(--cor-clara);
+}
 
 main{
     padding: 30px 10px;
     background-color: var(--cor-clara);
     display: flex;
     flex-direction: column;
+    max-width: 1350px;
+     margin: auto;
 }
 
 #reviewers_icon_back_star{
